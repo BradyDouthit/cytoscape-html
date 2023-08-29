@@ -1,0 +1,24 @@
+{
+  "name": "cytoscape-html",
+  "version": "0.0.1",
+  "description": "Allows for rendering of arbitrary HTML nodes, edges, and labels for Cytoscape.js",
+  "main": "cytoscape-html.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "cytoscape",
+    "cytoscape.js",
+    "cytoscapejs",
+    "extension"
+  ],
+  "license": "MIT"
+}

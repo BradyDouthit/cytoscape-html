@@ -1,0 +1,36 @@
+{
+  "name": "cytoscape-html",
+  "version": "0.0.1",
+  "description": "Allows for rendering of arbitrary HTML nodes, edges, and labels for Cytoscape.js",
+  "main": "cytoscape-html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/.git"
+  },
+  "keywords": [
+    "cytoscape",
+    "cytoscape.js",
+    "cytoscapejs",
+    "extension",
+    "html",
+    "nodes",
+    "label"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com//issues"
+  },
+  "homepage": "https://github.com/",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-jshint": "^1.8.5",
+    "gulp-prompt": "^0.1.1",
+    "gulp-replace": "^0.4.0",
+    "gulp-shell": "^0.2.9",
+    "jshint-stylish": "^1.0.0",
+    "run-sequence": "^1.0.0"
+  }
+}
