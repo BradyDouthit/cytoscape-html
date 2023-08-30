@@ -26,7 +26,7 @@
 
 
 ### 3.  Add HTML Nodes:
-  To create an HTML node, define a node in your elements array with the html field:  
+  Create nodes with an `html` field  
   ```
       const elements = [
         // ...other elements
@@ -41,21 +41,9 @@
       cy.add(elements);
   ```
 
-### 4.  Add HTML Nodes:
+### 4.  Render the HTML:
   To create an HTML node, define a node in your elements array with the html field:  
   ```
-      const elements = [
-        // ...other elements
-        {
-          data: {
-            id: 'html-node-1',
-            html: '<div class="node-content">This is an HTML node!</div>',
-          },
-        },
-      ];
-      
-      cy.add(elements);
-
       // tell cytoscape-html to render the nodes with a data.html attribute
       cytoscape.nodes().renderHTMLNodes();
   ```
