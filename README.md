@@ -16,7 +16,7 @@
    Create a Cytoscape instance and enable the HTML nodes extension:
    ```
     cytoscape.use(cytoscapeHTML);
-
+   
     const cy = cytoscape({
       container: document.getElementById('cy-container'),
       elements: [...], // Define your network elements here
@@ -28,24 +28,24 @@
 ### 3.  Add HTML Nodes:
   Create nodes with an `html` field  
   ```
-      const elements = [
-        // ...other elements
-        {
-          data: {
-            id: 'html-node-1',
-            html: '<div class="node-content">This is an HTML node!</div>',
-          },
-        },
-      ];
-      
-      cy.add(elements);
+   const elements = [
+     // ...other elements
+     {
+       data: {
+         id: 'html-node-1',
+         html: '<div class="node-content">This is an HTML node!</div>',
+       },
+     },
+   ];
+   
+   cy.add(elements);
   ```
 
 ### 4.  Render the HTML:
   To create an HTML node, define a node in your elements array with the html field:  
   ```
-      // tell cytoscape-html to render the nodes with a data.html attribute
-      cytoscape.nodes().renderHTMLNodes();
+   // tell cytoscape-html to render the nodes with a data.html attribute
+   cytoscape.nodes().renderHTMLNodes();
   ```
 
 ## Notes
