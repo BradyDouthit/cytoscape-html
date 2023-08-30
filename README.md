@@ -50,7 +50,7 @@
 
 ## Notes
 
-## The Plan
+### The Plan
 This extension is still very much a work in progress, but I give no guarantees that it will continue to be updated or maintained as I do not always have time
 
 ### Styling and Interaction:
