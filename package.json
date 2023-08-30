@@ -1,37 +1,37 @@
 {
-    "name": "cytoscape-html",
-    "version": "1.0.0",
-    "description": "",
-    "main": "dist/cytoscape-html.js",
-    "typings": "dist/cytoscape-html.d.ts",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "lint": "eslint . --ext .ts",
-      "build": "webpack",
-      "dev": "webpack --watch --progress"
-    },
-    "keywords": [
-      "graph",
-      "visualization",
-      "cytoscape"
-    ],
-    "author": "Brady Douthit",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/BradyDouthit/cytoscape-html"
-    },
-    "license": "MIT",
-    "devDependencies": {
-      "@typescript-eslint/eslint-plugin": "^5.17.0",
-      "@typescript-eslint/parser": "^5.17.0",
-      "eslint": "^8.12.0",
-      "ts-loader": "^9.2.8",
-      "typescript": "^4.6.3",
-      "webpack": "^5.72.0",
-      "webpack-cli": "^4.9.2",
-      "webpack-dev-server": "^4.8.1",
-      "@types/cytoscape": "^3.19.9",
-      "lodash": "^4.17.21"
-    },
-    "dependencies": {}
-  }
+  "name": "cytoscape-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cytoscape-html.js",
+  "typings": "dist/cytoscape-html.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "build": "webpack",
+    "dev": "webpack --watch --progress"
+  },
+  "keywords": [
+    "graph",
+    "visualization",
+    "cytoscape"
+  ],
+  "author": "Brady Douthit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BradyDouthit/cytoscape-html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
+    "@types/cytoscape": "^3.19.9",
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {}
+}
