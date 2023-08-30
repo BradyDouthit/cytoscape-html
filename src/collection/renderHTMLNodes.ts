@@ -11,7 +11,6 @@ export default function renderHTML(options: any) {
     const id = node.id();
     const html = node.data()?.html;
 
-    console.log({ id, html, data: node.data() });
     if (!html) return;
 
     const namespace = "__cytoscape-html";
