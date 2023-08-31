@@ -45,7 +45,7 @@
   To create an HTML node, define a node in your elements array with the html field:  
   ```
    // tell cytoscape-html to render the nodes with a data.html attribute
-   cytoscape.nodes().renderHTMLNodes();
+   cytoscape.nodes().renderHTMLNodesOverlay();
   ```
 
 ## Notes

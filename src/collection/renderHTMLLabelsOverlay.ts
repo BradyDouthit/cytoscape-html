@@ -1,7 +1,7 @@
 import cytoscape from "cytoscape";
 
 // TODO: use proper types
-export default function renderHTMLLabels(options: any) {
+export default function renderHTMLLabelsOverlay(options: any) {
   console.log("LABELS!!");
   const cyto = this.cy();
   const cytoContainer = cyto.container();

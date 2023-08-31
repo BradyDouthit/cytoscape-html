@@ -1,5 +1,6 @@
-import renderHTMLNodes from "./collection/renderHTMLNodes";
-import renderHTMLLabels from "./collection/renderHTMLLabels";
+import renderHTMLNodesOverlay from "./collection/renderHTMLNodesOverlay";
+import renderHTMLLabelsOverlay from "./collection/renderHTMLLabelsOverlay";
+import renderNodesHTML from './core/renderNodesHTML';
 
 // registers the extension on a cytoscape lib ref
 export default function register(cytoscape) {
@@ -9,8 +10,9 @@ export default function register(cytoscape) {
   }
 
   // register with cytoscape.js
-  cytoscape("collection", "renderHTMLNodes", renderHTMLNodes);
-  cytoscape("collection", "renderHTMLLabels", renderHTMLLabels);
+  cytoscape("collection", "__renderHTMLNodesOverlayOverlay", renderHTMLNodesOverlay);
+  cytoscape("collection", "__renderHTMLLabelsOverlayOverlay", renderHTMLLabelsOverlay);
+  cytoscape("core", "renderNodesHTML", renderNodesHTML)
 }
 
 if (typeof window.cytoscape !== "undefined") {
