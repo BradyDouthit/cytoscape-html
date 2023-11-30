@@ -1,4 +1,4 @@
-# NOTE: This is a side project for me and I have not had time to work on it lately. A lot of what is in this readme is the plan but not yet implemented. Would not recommend using this repo yet.
+# NOTE: This is a side project for me and I have not had time to work on it lately. A lot of what is in this readme is the plan but not yet implemented. Would not recommend using this repo as of 11/30/2023.
 
 # cytoscape-html
 `cytoscape-html` is designed to enhance your Cytoscape.js experience by introducing a seamless integration of HTML nodes within your network visualizations. With this extension, you can effortlessly incorporate HTML-based content as nodes, offering a new dimension of creativity and interactivity to your network graphs.
