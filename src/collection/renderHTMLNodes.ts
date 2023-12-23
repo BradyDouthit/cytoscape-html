@@ -35,9 +35,10 @@ export default function renderHTML(options: any) {
 
     nodeHtmlContainer.appendChild(newNode);
 
-    if (options.hideOriginal)
+    if (options.hideOriginal) {
       // Hide the original node
       node.style({ "background-opacity": 0 });
+    }
   };
 
   function handleMovement() {
