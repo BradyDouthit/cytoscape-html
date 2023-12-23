@@ -1,5 +1,8 @@
+# Note from me:
+I made this for a specific usecase I encountered and thought others may get some use out of it. I'm not actively developing this extension but feel free to take this concept and make it better. 
+
 # cytoscape-html
-`cytoscape-html` is designed to enhance your Cytoscape.js experience by introducing a seamless integration of HTML nodes within your network visualizations. With this extension, you can effortlessly incorporate HTML-based content as nodes, offering a new dimension of creativity and interactivity to your network graphs.
+`cytoscape-html` is designed to enhance your Cytoscape.js experience by introducing a seamless integration of HTML nodes within your network visualizations.
 
 ## Installation  
 `npm install cytoscape-html`
@@ -49,7 +52,6 @@
   ```
   You may also hide the underlying node with `hideOriginal`:  
   ```
-   // tell cytoscape-html to render the nodes with a data.html attribute
    cytoscape.nodes().renderHTMLNodes({ hideOriginal: true });
   ```
 
