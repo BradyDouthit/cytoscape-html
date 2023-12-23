@@ -1,5 +1,3 @@
-# NOTE: This is a side project for me and I have not had time to work on it lately. A lot of what is in this readme is the plan but not yet implemented. Would not recommend using this repo as of 11/30/2023.
-
 # cytoscape-html
 `cytoscape-html` is designed to enhance your Cytoscape.js experience by introducing a seamless integration of HTML nodes within your network visualizations. With this extension, you can effortlessly incorporate HTML-based content as nodes, offering a new dimension of creativity and interactivity to your network graphs.
 
@@ -55,13 +53,8 @@
    cytoscape.nodes().renderHTMLNodes({ hideOriginal: true });
   ```
 
-## Notes
-
-### The Plan
-This extension is still very much a work in progress, but I give no guarantees that it will continue to be updated or maintained as I do not always have time
-
 ### Styling and Interaction:
-You can style your HTML nodes using CSS classes, and you can attach event listeners using Cytoscape's event handling mechanisms:
+You can style your HTML nodes using CSS classes, and you can attach event listeners using Cytoscape's event handling mechanisms.
 
 ### License
 This project is licensed under the [MIT](https://github.com/BradyDouthit/cytoscape-html/blob/main/LICENSE) License.
