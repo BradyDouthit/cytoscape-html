@@ -1,7 +1,10 @@
 import cytoscape from "cytoscape";
 
-// TODO: use proper types
-export default function renderHTML(options: any) {
+interface Options {
+  hideOriginal: Boolean;
+}
+
+export default function renderHTML(options: Options) {
   const cyto = this.cy();
   const cytoContainer = cyto.container();
   const nodeHtmlContainer = document.createElement("div");
@@ -54,8 +57,8 @@ export default function renderHTML(options: any) {
     nodeHtmlContainer.style.height = canvas.style.height;
     nodeHtmlContainer.style.zIndex = "1";
 
-    cyto.on("add", "node", (e: any) => createNode(e.target));
-    cyto.on("drag", "node", (e: any) => createNode(e.target));
+    cyto.on("add", "node", (e: cytoscape.EventObject) => createNode(e.target));
+    cyto.on("drag", "node", (e: cytoscape.EventObject) => createNode(e.target));
     cyto.on("pan resize", handleMovement);
   }
 
