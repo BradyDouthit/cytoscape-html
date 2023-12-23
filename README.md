@@ -49,6 +49,11 @@
    // tell cytoscape-html to render the nodes with a data.html attribute
    cytoscape.nodes().renderHTMLNodes();
   ```
+  You may also hide the underlying node with `hideOriginal`:  
+  ```
+   // tell cytoscape-html to render the nodes with a data.html attribute
+   cytoscape.nodes().renderHTMLNodes({ hideOriginal: true });
+  ```
 
 ## Notes
 
