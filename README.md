@@ -1,8 +1,5 @@
-# Note from me:
-I made this for a specific usecase I encountered and thought others may get some use out of it. I'm not actively developing this extension but feel free to take this concept and make it better. 
-
 # cytoscape-html
-`cytoscape-html` is designed to enhance your Cytoscape.js experience by introducing a seamless integration of HTML nodes within your network visualizations.
+`cytoscape-html` allows you to render arbitrary HTML as nodes on the graph
 
 ## Installation  
 `npm install cytoscape-html`
