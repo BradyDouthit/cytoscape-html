@@ -39,8 +39,25 @@ export default function renderHTML(options: Options) {
     nodeHtmlContainer.appendChild(newNode);
 
     if (options.hideOriginal) {
-      // Hide the original node
-      node.style({ "background-opacity": 0, label: "" });
+      // Hide the original node and reset the style
+      node.style({
+        "background-opacity": 0,
+        "label": "",
+        "text-opacity": 0,
+        "text-background-opacity": 0,
+        "text-background-padding": "0px",
+        "border-width": "0px",
+        "border-color": "transparent",
+        "padding": "0px",
+        "text-border-width": "0px",
+        "text-border-color": "transparent",
+        "text-border-opacity": 0,
+        "text-background-color": "transparent",
+        "color": "transparent",
+        "text-outline-width": 0,
+        "text-outline-opacity": 0,
+        "text-outline-color": "transparent"
+      });
     }
   };
 
