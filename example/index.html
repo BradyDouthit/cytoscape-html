@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cytoscape HTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        #cy {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: white;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .node-html {
+            background-color: white;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            min-width: 100px;
+            text-align: center;
+        }
+        .node-html img {
+            max-width: 50px;
+            max-height: 50px;
+            border-radius: 50%;
+        }
+        .node-html h3 {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .node-html p {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cytoscape HTML Example</h1>
+    <p>This example demonstrates the cytoscape-html extension with three fixed nodes (red, green, and blue) created using HTML strings.</p>
+    
+    <div class="controls">
+        <button id="reset">Reset Layout</button>
+    </div>
+    
+    <div id="cy"></div>
+
+    <!-- Load Cytoscape.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+    
+    <!-- Load the local cytoscape-html extension -->
+    <script src="../dist/cytoscape-html.js"></script>
+    
+    <!-- Load the example script -->
+    <script src="example.js"></script>
+</body>
+</html> 
