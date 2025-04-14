@@ -19,6 +19,10 @@ export default function renderHTMLLabels(options: Options) {
     const namespace = "__cytoscape-html-labels";
     const internalLabelId = `${namespace}_label-${id}`;
     const position = element.renderedPosition();
+    
+    // Check if position is defined
+    if (!position) return;
+    
     const posX = position.x.toFixed(2);
     const posY = position.y.toFixed(2);
 
