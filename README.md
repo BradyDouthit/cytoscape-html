@@ -1,5 +1,5 @@
 # cytoscape-html
-`cytoscape-html` allows you to render arbitrary HTML as nodes on the graph
+`cytoscape-html` allows you to render arbitrary HTML as nodes and labels on the graph
 
 ## Installation  
 `npm install cytoscape-html`
@@ -41,8 +41,24 @@
    cy.add(elements);
   ```
 
-### 4.  Render the HTML:
-  To create an HTML node, define a node in your elements array with the html field:  
+### 4.  Add HTML Labels:
+  Create elements with a `labelHtml` field  
+  ```
+   const elements = [
+     // ...other elements
+     {
+       data: {
+         id: 'html-node-1',
+         labelHtml: '<div class="label-content">This is an HTML label!</div>',
+       },
+     },
+   ];
+   
+   cy.add(elements);
+  ```
+
+### 5.  Render the HTML:
+  To render HTML nodes:  
   ```
    // tell cytoscape-html to render the nodes with a data.html attribute
    cytoscape.nodes().renderHTMLNodes();
@@ -51,14 +67,25 @@
   ```
    cytoscape.nodes().renderHTMLNodes({ hideOriginal: true });
   ```
+  
+  To render HTML labels:  
+  ```
+   // tell cytoscape-html to render the elements with a data.labelHtml attribute
+   cytoscape.elements().renderHTMLLabels();
+  ```
+  You may also hide the underlying label with `hideOriginal`:  
+  ```
+   cytoscape.elements().renderHTMLLabels({ hideOriginal: true });
+  ```
 
 ### Styling and Interaction:
-You can style your HTML nodes using CSS classes, and you can attach event listeners using Cytoscape's event handling mechanisms.
+You can style your HTML nodes and labels using CSS classes, and you can attach event listeners using Cytoscape's event handling mechanisms.
 
 ## Example
 An example is included in the `/example` directory. This example demonstrates:
 - Creating three colored nodes (red, green, and blue) with custom HTML content
-- Using the `renderHTMLNodes` function to render the HTML content
+- Adding custom HTML labels to both nodes and edges
+- Using the `renderHTMLNodes` and `renderHTMLLabels` functions to render the HTML content
 
 To run the example:
 1. Build the extension: `npm run build`

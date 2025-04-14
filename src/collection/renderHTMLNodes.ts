@@ -40,7 +40,7 @@ export default function renderHTML(options: Options) {
 
     if (options.hideOriginal) {
       // Hide the original node
-      node.style({ "background-opacity": 0 });
+      node.style({ "background-opacity": 0, label: "" });
     }
   };
 
