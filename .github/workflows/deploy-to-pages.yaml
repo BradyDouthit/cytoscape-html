@@ -33,12 +33,12 @@ jobs:
         run: |
           rm -rf public
           mkdir -p public
-          cp -r example/* public/
-          if [ ! -d dist ]; then
-            echo "Error: dist directory not found"
-            exit 1
-          fi
-          cp -r dist/* public/
+          # Copy example files
+          cp -r example public/
+          # Create dist directory in public
+          mkdir -p public/dist
+          # Copy all dist files
+          cp -r dist/* public/dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
