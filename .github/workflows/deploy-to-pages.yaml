@@ -34,11 +34,11 @@ jobs:
           rm -rf public
           mkdir -p public
           cp -r example/* public/
-          if [ ! -f dist/cytoscape-html.js ]; then
-            echo "Error: dist/cytoscape-html.js not found"
+          if [ ! -d dist ]; then
+            echo "Error: dist directory not found"
             exit 1
           fi
-          cp dist/cytoscape-html.js public/
+          cp -r dist/* public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
