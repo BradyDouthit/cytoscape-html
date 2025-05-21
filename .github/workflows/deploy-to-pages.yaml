@@ -33,12 +33,8 @@ jobs:
         run: |
           rm -rf public
           mkdir -p public
-          # Copy example files
-          cp -r example public/
-          # Create dist directory in public
-          mkdir -p public/dist
-          # Copy all dist files
-          cp -r dist/* public/dist/
+          cp -r example/* public/
+          cp -r dist/* public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
