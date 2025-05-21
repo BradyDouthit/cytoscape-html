@@ -7,7 +7,7 @@ const cy = cytoscape({
         data: {
           id: "red",
           html: `
-                        <div class="node-html" style="background-color: #ffebee; border: 2px solid #f44336;">
+                        <div class="node-html" style="background-color: #ffebee; border: 2px solid #f44336; opacity: 0.7;">
                             <h3>Red Node</h3>
                             <p>This is a red HTML node</p>
                         </div>
@@ -18,7 +18,7 @@ const cy = cytoscape({
         data: {
           id: "green",
           html: `
-                        <div class="node-html" style="background-color: #e8f5e9; border: 2px solid #4CAF50;">
+                        <div class="node-html" style="background-color: #e8f5e9; border: 2px solid #4CAF50; opacity: 0.7;">
                             <h3>Green Node</h3>
                             <p>This is a green HTML node</p>
                         </div>
@@ -29,7 +29,7 @@ const cy = cytoscape({
         data: {
           id: "blue",
           html: `
-                        <div class="node-html" style="background-color: #e3f2fd; border: 2px solid #2196F3;">
+                        <div class="node-html" style="background-color: #e3f2fd; border: 2px solid #2196F3; opacity: 0.7;">
                             <h3>Blue Node</h3>
                             <p>This is a blue HTML node</p>
                         </div>

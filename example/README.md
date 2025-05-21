@@ -4,7 +4,7 @@ This example demonstrates the usage of the `cytoscape-html` extension, which all
 
 ## How to Run
 
-1. First, build the extension:
+1. First in the root directory, build the extension:
    ```
    npm run build
    ```
