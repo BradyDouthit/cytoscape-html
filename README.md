@@ -1,5 +1,5 @@
 # cytoscape-html
-`cytoscape-html` allows you to render arbitrary HTML as nodes on the graph
+`cytoscape-html` allows you to render arbitrary HTML as nodes on the graph. Click [here](https://bradydouthit.github.io/cytoscape-html/) to see a basic example!
 
 ## Installation  
 `npm install cytoscape-html`
