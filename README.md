@@ -55,5 +55,14 @@
 ### Styling and Interaction:
 You can style your HTML nodes using CSS classes, and you can attach event listeners using Cytoscape's event handling mechanisms.
 
+## Example
+An example is included in the `/example` directory. This example demonstrates:
+- Creating three colored nodes (red, green, and blue) with custom HTML content
+- Using the `renderHTMLNodes` function to render the HTML content
+
+To run the example:
+1. Build the extension: `npm run build`
+2. Open the `example/index.html` file in your browser
+
 ### License
 This project is licensed under the [MIT](https://github.com/BradyDouthit/cytoscape-html/blob/main/LICENSE) License.

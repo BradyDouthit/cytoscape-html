@@ -6,14 +6,14 @@ module.exports = {
   output: {
     filename: "cytoscape-html.js",
     path: path.resolve(__dirname, "dist"),
-    libraryTarget: "commonjs2",
+    libraryTarget: "window",
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: "ts-loader",
-        exclude: /node_modules/,
+        exclude: [/node_modules/, /example/],
       },
     ],
   },

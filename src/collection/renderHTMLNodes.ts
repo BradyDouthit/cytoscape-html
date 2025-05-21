@@ -39,8 +39,14 @@ export default function renderHTML(options: Options) {
     nodeHtmlContainer.appendChild(newNode);
 
     if (options.hideOriginal) {
-      // Hide the original node
-      node.style({ "background-opacity": 0 });
+      // Hide the original node completely
+      node.style({
+        "background-opacity": 0,
+        "border-opacity": 0,
+        "text-opacity": 0,
+        "label-opacity": 0,
+        "overlay-opacity": 0
+      });
     }
   };
 
