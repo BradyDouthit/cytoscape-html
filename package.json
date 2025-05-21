@@ -1,6 +1,6 @@
 {
   "name": "cytoscape-html",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A simple cytoscape extension that adds the ability to use HTML for nodes.",
   "main": "dist/cytoscape-html.js",
   "typings": "dist/cytoscape-html.d.ts",
@@ -13,7 +13,12 @@
   "keywords": [
     "graph",
     "visualization",
-    "cytoscape"
+    "cytoscape",
+    "html",
+    "cytoscape",
+    "cytoscape-extension",
+    "cytoscape-html",
+    "custom-nodes"
   ],
   "author": "Brady Douthit",
   "repository": {
