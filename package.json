@@ -1,6 +1,6 @@
 {
   "name": "cytoscape-html",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simple cytoscape extension that adds the ability to use HTML for nodes.",
   "main": "dist/cytoscape-html.js",
   "typings": "dist/cytoscape-html.d.ts",

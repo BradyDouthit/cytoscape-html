@@ -44,8 +44,7 @@ export default function renderHTML(options: Options) {
         "background-opacity": 0,
         "border-opacity": 0,
         "text-opacity": 0,
-        "label-opacity": 0,
-        "overlay-opacity": 0
+        "overlay-opacity": 0,
       });
     }
   };

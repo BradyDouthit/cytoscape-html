@@ -6,7 +6,10 @@ module.exports = {
   output: {
     filename: "cytoscape-html.js",
     path: path.resolve(__dirname, "dist"),
-    libraryTarget: "window",
+    library: "cytoscapeHtml",
+    libraryTarget: "umd",
+    libraryExport: "default",
+    globalObject: "this",
   },
   module: {
     rules: [
