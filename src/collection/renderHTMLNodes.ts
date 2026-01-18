@@ -49,6 +49,20 @@ export default function renderHTML(options: Options) {
     }
   };
 
+  const removeNode = (node: any) => {
+    const id = node.id();
+    const html = node.data()?.html;
+
+    if (!html) return;
+
+    const namespace = "__cytoscape-html";
+    const internalNodeId = `${namespace}_node-${id}`;
+
+    const existingNode = nodeHtmlContainer.querySelector("#" + internalNodeId);
+
+    if (existingNode) nodeHtmlContainer.removeChild(existingNode);
+  }
+
   function handleMovement() {
     cyto.nodes().forEach((node) => createNode(node));
   }
@@ -63,6 +77,7 @@ export default function renderHTML(options: Options) {
     nodeHtmlContainer.style.zIndex = "1";
 
     cyto.on("add", "node", (e: cytoscape.EventObject) => createNode(e.target));
+    cyto.on("remove", "node", (e: cytoscape.EventObject) => removeNode(e.target));
     cyto.on("drag", "node", (e: cytoscape.EventObject) => createNode(e.target));
     cyto.on("pan resize", handleMovement);
   }
