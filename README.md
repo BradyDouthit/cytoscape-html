@@ -1,6 +1,9 @@
 # cytoscape-html
 `cytoscape-html` allows you to render arbitrary HTML as nodes on the graph. Click [here](https://bradydouthit.github.io/cytoscape-html/) to see a basic example!
 
+## A Note On Security
+Always sanitize the HTML you put into this. As with anything that renders arbitrary HTML, it could be dangerous if you do not trust the source. For most applications of this extension, this isn't an issue because you know exactly what is being rendered. If not, make sure you are sanitizing the HTML first. I'd personally recommend [DOMPurify](https://github.com/cure53/dompurify).
+
 ## Installation  
 `npm install cytoscape-html`
 
